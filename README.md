@@ -12,10 +12,16 @@ You can find the installation here https://nodejs.org/en.
 npm install
 ```
 
-### Step 3: Start Development Server
-Confirm the port number is set to 3001 by setting the "dev" script in package.json to "dev": "next dev -p 3001"
+### Step 3: Set Up Environmental Variables
+Create a .env.local file in the root directory to define environment variables for the API URL that the front-end will connect to. 
+
+```bash
+NEXT_PUBLIC_API_URL=http://localhost:3001
+```
 
 ### Step 4: Start Development Server
+Once the backend server is running, start the frontend server
+
 ```bash
 npm run dev
 ```
