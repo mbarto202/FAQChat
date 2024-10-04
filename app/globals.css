@@ -4,20 +4,33 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000000;
+}
+
+#root, html, body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(15, 17, 29); /* Apply solid background */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto; /* Center container */
 }
 
 @layer utilities {
