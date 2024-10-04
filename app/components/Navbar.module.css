@@ -1,0 +1,68 @@
+/* Frame 2 */
+.navbar {
+    position: absolute;
+    width: 1120px;
+    height: 28px;
+    left: 160px;
+    top: 48px;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+/* FaqChat.co */
+.logo {
+    position: static;
+    width: 142px;
+    height: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+/* Frame 427321851 - List of options on the right */
+.navLinks {
+    position: static;
+    width: 500px;
+    height: 28px;
+  
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 36px;
+    padding: 4px 0 0 0;
+  
+    /* Inside Auto Layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+/* Frame 427321849 - Products Option */
+.productsOption {
+    position: static;
+    width: 90px;
+    height: 24px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8;
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 36px;
+}
