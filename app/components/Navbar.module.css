@@ -154,3 +154,166 @@
 .servicesLink:hover {
     color: #5098ebd5;
 }
+
+/* Frame 427321853 - About Us Option */
+.aboutOption {
+    position: static;
+    width: 68px;
+    height: 24px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Align the gap with other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 0px 36px;
+}
+
+/* About Us Link */
+.aboutLink {
+    position: static;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Consistent with other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+/* Hover effect */
+.aboutLink:hover {
+    color: #5098ebd5;
+}
+
+/* Frame 427321854 - Pricing Option */
+.pricingOption {
+    position: static;
+    width: 51px;
+    height: 24px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Adjusted to match the other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 0px 36px;
+}
+
+/* Pricing Link */
+.pricingLink {
+    position: static;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Consistent with other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+/* Hover effect */
+.pricingLink:hover {
+    color: #5098ebd5;
+}
+
+/* Frame 427321855 - Contact Option */
+.contactOption {
+    position: static;
+    width: 61px;
+    height: 24px;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Adjusted to match the other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 0px 36px;
+}
+
+/* Contact Link */
+.contactLink {
+    position: static;
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px; /* Consistent with other links */
+    padding: 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+/* Hover effect */
+.contactLink:hover {
+    color: #5098ebd5;
+}
+
+/* Dropdown arrow styling */
+.dropdownIcon {
+    margin-left: 8px;
+    font-size: 12px; /* Adjust the size as needed */
+    color: white; /* Match the text color */
+  }
