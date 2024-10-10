@@ -14,14 +14,22 @@
     padding: 0px;
 }
 
-/* FaqChat.co */
+/* Logo Styling */
 .logo {
     position: static;
-    width: 142px;
+    width: auto; /* Allow width to adjust dynamically */
     height: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+
+    /* Logo styling */
+    color: rgb(255, 255, 255);
+    font-family: 'Gilroy', sans-serif;
+    font-size: 20px; /* Slightly bigger than options */
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    /* Adjust margins as necessary */
     margin: 0px 10px;
 }
 
@@ -36,7 +44,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 36px;
+    gap: 10px;
     padding: 4px 0 0 0;
   
     /* Inside Auto Layout */
@@ -133,7 +141,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 0px;
 
     /* Inside Auto Layout */
@@ -317,3 +325,4 @@
     font-size: 12px; /* Adjust the size as needed */
     color: white; /* Match the text color */
   }
+  
