@@ -4,6 +4,9 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styles from './Navbar.module.css';
+import Image from 'next/image';  // Import Next.js Image component for optimization
+import logo from '../assets/images/logo.png';  
+
 
 export default function Navbar() {
   const [productsDropdownOpen, setProductsDropdownOpen] = useState(false);
@@ -19,17 +22,16 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>FaqChat.co</div>
+      <Image src={logo} alt="Logo" width={150} height={25} className={styles.logo} />  {/* Adjust width and height as needed */}
       <ul className={styles.navLinks}>
         {/* Products Dropdown */}
         <li
           className={styles.productsOption}
-          onMouseEnter={toggleProductsDropdown}
-          onMouseLeave={toggleProductsDropdown}
+          onClick={toggleProductsDropdown}
         >
           <a className={styles.productsLink} href="#products">Products <FontAwesomeIcon icon={faChevronDown} className={styles.dropdownIcon} /></a>
           {productsDropdownOpen && (
-            <ul>
+            <ul className={styles.dropdownMenuProducts}>
               <li><a href="#product1">Product 1</a></li>
               <li><a href="#product2">Product 2</a></li>
               <li><a href="#product3">Product 3</a></li>
@@ -40,12 +42,11 @@ export default function Navbar() {
         {/* Services Dropdown */}
         <li
           className={styles.servicesOption}
-          onMouseEnter={toggleServicesDropdown}
-          onMouseLeave={toggleServicesDropdown}
+          onClick={toggleServicesDropdown}
         >
           <a className={styles.servicesLink} href="#services">Services <FontAwesomeIcon icon={faChevronDown} className={styles.dropdownIcon} /></a>
           {servicesDropdownOpen && (
-            <ul>
+            <ul className={styles.dropdownMenuServices}>
               <li><a href="#service1">Service 1</a></li>
               <li><a href="#service2">Service 2</a></li>
               <li><a href="#service3">Service 3</a></li>

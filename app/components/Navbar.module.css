@@ -14,25 +14,6 @@
     padding: 0px;
 }
 
-/* Logo Styling */
-.logo {
-    position: static;
-    width: auto; /* Allow width to adjust dynamically */
-    height: 24px;
-
-    /* Logo styling */
-    color: rgb(255, 255, 255);
-    font-family: 'Gilroy', sans-serif;
-    font-size: 20px; /* Slightly bigger than options */
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
-
-    /* Adjust margins as necessary */
-    margin: 0px 10px;
-}
-
 /* Frame 427321851 - List of options on the right */
 .navLinks {
     position: static;
@@ -51,7 +32,7 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 10px;
+    margin: 0px 40px;
 }
 
 /* Frame 427321849 - Products Option */
@@ -65,14 +46,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8;
+    gap: 4;
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 36px;
+    margin: 0px 20px;
 }
 
 /* Products */
@@ -86,14 +67,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8;
+    gap: 4;
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 8px;
+    margin: 0px 20px;
 
     color: rgb(255, 255, 255);
     font-family: 'Gilroy', sans-serif;
@@ -120,14 +101,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 36px;
+    margin: 0px 20px;
 }
 
 /* Services Link Styling */
@@ -174,14 +155,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px; /* Align the gap with other links */
+    gap: 4px; /* Align the gap with other links */
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 2;
     flex-grow: 0;
-    margin: 0px 36px;
+    margin: 0px 20px;
 }
 
 /* About Us Link */
@@ -226,14 +207,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px; /* Adjusted to match the other links */
+    gap: 4px; /* Adjusted to match the other links */
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 3;
     flex-grow: 0;
-    margin: 0px 36px;
+    margin: 0px 20px;
 }
 
 /* Pricing Link */
@@ -278,14 +259,14 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 8px; /* Adjusted to match the other links */
+    gap: 4px; /* Adjusted to match the other links */
     padding: 0px;
 
     /* Inside Auto Layout */
     flex: none;
     order: 4;
     flex-grow: 0;
-    margin: 0px 36px;
+    margin: 0px 20px;
 }
 
 /* Contact Link */
@@ -326,3 +307,24 @@
     color: white; /* Match the text color */
   }
   
+  /* Dropdown menu styling */
+.dropdownMenuProducts {
+    position: absolute;
+    top: 100%; /* Push the dropdown directly below the link */
+  }
+  
+  .dropdownMenuProducts li {
+    list-style: none; /* Remove bullet points */
+    padding: 8px 20px; /* Adjust spacing inside dropdown options */
+  }
+
+.dropdownMenuServices {
+    position: absolute;
+    top: 100%; /* Push the dropdown directly below the link */
+}
+
+  .dropdownMenuServices li {
+    list-style: none; /* Remove bullet points */
+    padding: 8px 8px; /* Adjust spacing inside dropdown options */
+  }
+ 
