@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import styles from './Navbar.module.css';
-import Image from 'next/image';  // Import Next.js Image component for optimization
-import logo from '../assets/images/logo.png';  
+import Image from 'next/image';
+import logo from '../../assets/images/logo.png';  
 
 
 export default function Navbar() {
