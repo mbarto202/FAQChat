@@ -38,25 +38,3 @@ body {
     text-wrap: balance;
   }
 }
-
-/* Importing the Gilroy font */
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/path/to/Gilroy-Regular.woff2') format('woff2'),
-       url('/path/to/Gilroy-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('/path/to/Gilroy-Bold.woff2') format('woff2'),
-       url('/path/to/Gilroy-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-/* Apply it globally */
-body {
-  font-family: 'Gilroy', sans-serif;
-}
