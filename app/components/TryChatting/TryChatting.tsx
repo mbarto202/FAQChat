@@ -2,22 +2,17 @@
 
 import React from 'react';
 import Image from 'next/image';
-import styles from './TryChatting.module.css'; 
+import styles from './TryChatting.module.css'; // Import the CSS file
 
 const TryChatting = () => {
   return (
-    <section className={styles.tryChattingContainer}>
-      {/* Left section (title, text, button) */}
-      <div className={styles.leftSection}>
+    <section className={styles.tryChattingSection}>
+      <div className={styles.contentFrame}> {/* Frame encapsulating the title, text, and button */}
         <h2 className={styles.title}>Try Chatting with Our FAQ</h2>
-        <p className={styles.description}>
-          Experience our FAQChat system and see how it works
-        </p>
+        <p className={styles.description}>Experience our FAQChat system and see how it works</p>
         <button className={styles.chatButton}>Chat Here</button>
       </div>
-
-      {/* Right section (PNG image) */}
-      <div className={styles.rightSection}>
+      <div className={styles.imageContainer}>
         png
       </div>
     </section>

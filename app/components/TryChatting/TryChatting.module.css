@@ -1,53 +1,57 @@
-.tryChattingContainer {
+/* Frame encapsulating the whole Try Chatting section */
+.tryChattingSection {
     position: static;
     width: 1120px;
     height: 362px;
-  
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0px 72px 0px 40px;
-  
     margin: 200px 0px;
   }
   
-  /* Left section (title, description, button) */
-  .leftSection {
+  /* Frame encapsulating the title, text, and button */
+  .contentFrame {
+    position: static;
+    width: 552px;
+    height: 362px;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 64px;
+    padding: 0px;
+    margin: 0px 10px;
   }
   
   .title {
     font-size: 32px;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin: 0;
   }
   
   .description {
     font-size: 18px;
-    margin-bottom: 20px;
+    margin: 16px 0;
   }
   
   .chatButton {
-    background-color: #5098eb;
+    padding: 12px 24px;
+    background-color: #5098ebd5;
     color: white;
     border: none;
-    padding: 12px 24px;
-    font-size: 16px;
     cursor: pointer;
-    border-radius: 8px;
+    font-size: 16px;
   }
   
   .chatButton:hover {
-    background-color: #3e80cc;
+    background-color: #407bbf;
   }
   
-  /* Right section (image placeholder) */
-  .rightSection {
-    /* Style the image container as needed */
-    width: 300px;  /* Adjust based on image size */
-    height: 100%;  /* Full height to match the section */
+  .imageContainer {
+    width: auto;
+    height: auto;
+    /* Add styles for your image or PNG here */
   }
   
