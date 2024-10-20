@@ -1,4 +1,4 @@
-/* Frame encapsulating the whole Try Chatting section */
+/* Frame 427322109 encapsulating the whole Try Chatting section */
 .tryChattingSection {
     position: static;
     width: 1120px;
@@ -9,9 +9,10 @@
     align-items: center;
     padding: 0px 72px 0px 40px;
     margin: 200px 0px;
+    margin-left: 160px;
   }
   
-  /* Frame encapsulating the title, text, and button */
+  /* Frame 427322103 - Content Frame encapsulating title, text, and button */
   .contentFrame {
     position: static;
     width: 552px;
@@ -24,11 +25,39 @@
     padding: 0px;
     margin: 0px 10px;
   }
+
+  /* Frame 427322102 - Frame encapsulating title and text */
+.titleTextFrame {
+    position: static;
+    width: 552px;
+    height: 238px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0px;
+    margin: 64px 0px;
+  }
+
+  /* Frame for the title only */
+.titleFrame {
+    position: static;
+    width: 552px;
+    height: 150px;
+    margin: 20px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
   
   .title {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 0;
+    font-size: 68px;
+    font-weight: 600;
+    line-height: 110%;
+    letter-spacing: 1%;
+    text-align: left;
   }
   
   .description {
@@ -52,6 +81,5 @@
   .imageContainer {
     width: auto;
     height: auto;
-    /* Add styles for your image or PNG here */
   }
   
