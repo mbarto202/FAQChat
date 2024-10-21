@@ -11,9 +11,7 @@ const TryChatting = () => {
         {" "}
         {/* Frame encapsulating the title, text, and button */}
         <div className={styles.titleTextFrame}>
-          <div className="titleFrame">
-            <h2 className={styles.title}>Try Chatting with Our FAQ</h2>
-          </div>
+          <h2 className={styles.title}>Try Chatting with Our FAQ</h2>
           <p className={styles.description}>
             Experience our FAQChat system and see how it works
           </p>

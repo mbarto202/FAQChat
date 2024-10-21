@@ -7,7 +7,9 @@
   --foreground: #000000;
 }
 
-#root, html, body {
+#root,
+html,
+body {
   width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
