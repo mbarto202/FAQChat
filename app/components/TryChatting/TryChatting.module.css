@@ -1,85 +1,99 @@
 /* Frame 427322109 encapsulating the whole Try Chatting section */
 .tryChattingSection {
-    position: static;
-    width: 1120px;
-    height: 362px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px 72px 0px 40px;
-    margin: 200px 0px;
-    margin-left: 160px;
-  }
-  
-  /* Frame 427322103 - Content Frame encapsulating title, text, and button */
-  .contentFrame {
-    position: static;
-    width: 552px;
-    height: 362px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 64px;
-    padding: 0px;
-    margin: 0px 10px;
-  }
-
-  /* Frame 427322102 - Frame encapsulating title and text */
-.titleTextFrame {
-    position: static;
-    width: 552px;
-    height: 238px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 20px;
-    padding: 0px;
-    margin: 64px 0px;
-  }
-
-  /* Frame for the title only */
-.titleFrame {
-    position: static;
-    width: 552px;
-    height: 150px;
-    margin: 20px 0px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+  position: static;
+  width: 1120px;
+  height: 362px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 72px 0px 40px;
+  margin: 200px 0px;
+  margin-left: 160px;
 }
 
-  
-  .title {
-    font-size: 68px;
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: 1%;
-    text-align: left;
-  }
-  
-  .description {
-    font-size: 18px;
-    margin: 16px 0;
-  }
-  
-  .chatButton {
-    padding: 12px 24px;
-    background-color: #5098ebd5;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  .chatButton:hover {
-    background-color: #407bbf;
-  }
-  
-  .imageContainer {
-    width: auto;
-    height: auto;
-  }
-  
+/* Frame 427322103 - Content Frame encapsulating title, text, and button */
+.contentFrame {
+  position: static;
+  width: 552px;
+  height: 362px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 64px;
+  padding: 0px;
+  margin: 0px 10px;
+}
+
+/* Frame 427322102 - Frame encapsulating title and text */
+.titleTextFrame {
+  position: static;
+  width: 552px;
+  height: 238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 0px;
+  margin: 64px 0px;
+}
+
+/* Frame for the title only */
+.titleFrame {
+  position: static;
+  width: 552px;
+  height: 150px;
+  margin: 20px 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.chatButtonFrame {
+  position: static;
+  width: 224px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  margin: 64px 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.title {
+  font-size: 68px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: 1%;
+  text-align: left;
+}
+
+.description {
+  font-size: 18px;
+  margin: 16px 0;
+}
+
+.chatButton {
+  padding: 12px 24px;
+  background-color: #5098ebd5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.chatButton:hover {
+  background-color: #407bbf;
+}
+
+.imageContainer {
+  width: auto;
+  height: auto;
+}
