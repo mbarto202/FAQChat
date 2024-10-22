@@ -111,7 +111,11 @@
   line-height: 110%;
   letter-spacing: 1%;
   text-align: left;
-  margin: 0; /* Ensure no margin on the title */
+}
+.logoText {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .description {
