@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import styles from "./TryChatting.module.css";
 import logo from "../../assets/images/faqlogo.png";
+import assistant from "../../assets/images/assistant.png";
 
 const TryChatting = () => {
   return (
@@ -15,7 +16,7 @@ const TryChatting = () => {
           <h2 className={styles.title}>
             Try Chatting with Our{" "}
             <span className={styles.logoText}>
-              <Image src={logo} alt="FAQ Logo" width={100} height={50} />
+              <Image src={logo} alt="FAQ Logo" width={120} height={50} />
             </span>
           </h2>
           <p className={styles.description}>
@@ -26,7 +27,15 @@ const TryChatting = () => {
           </div>
         </div>
       </div>
-      <div className={styles.imageContainer}>png</div>
+      <div className={styles.imageContainer}>
+        <div className={styles.ellipse}></div>
+        <Image
+          src={assistant}
+          alt="Description of the image"
+          width={220}
+          height={360}
+        />
+      </div>
     </section>
   );
 };
