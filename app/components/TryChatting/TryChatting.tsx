@@ -22,9 +22,7 @@ const TryChatting = () => {
           <p className={styles.description}>
             Experience our FAQChat system and see how it works
           </p>
-          <div className={styles.chatButtonFrame}>
-            <button className={styles.chatButton}>Chat Here</button>
-          </div>
+          <button className={styles.chatButton}>Chat Here</button>
         </div>
       </div>
       <div className={styles.imageContainer}>
