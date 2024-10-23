@@ -18,8 +18,16 @@ const NavBarLink: React.FC<NavBarLinkProps> = ({ title, href, links }) => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const handleMouseLeave = () => {
+    if (links) setDropdownOpen(false);
+  };
+
   return (
-    <li className={styles.navItem} onClick={links ? toggleDropdown : undefined}>
+    <li
+      className={styles.navItem}
+      onClick={links ? toggleDropdown : undefined}
+      onMouseLeave={handleMouseLeave}
+    >
       <a className={styles.navLink} href={href}>
         {title}
         {links && (
