@@ -1,12 +1,20 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 import NavBarLink from "./NavBarLink"; // Import the reusable component
 import logo from "../../assets/images/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle menu state
+  };
+
   return (
     <nav className={styles.navbar}>
       <Image
@@ -16,7 +24,13 @@ export default function Navbar() {
         height={25}
         className={styles.logo}
       />
-      <ul className={styles.navLinks}>
+
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} />{" "}
+        {/* Switch icons */}
+      </div>
+
+      <ul className={`${styles.navLinks} ${isMenuOpen ? styles.active : ""}`}>
         <NavBarLink
           title="Products"
           href="#products"
