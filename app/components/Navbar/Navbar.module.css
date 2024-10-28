@@ -28,7 +28,7 @@
 }
 
 /* Media query for smaller screens */
-@media (max-width: 1060px) {
+@media (max-width: 1300px) {
   .navLinks {
     display: none;
     flex-direction: column;
