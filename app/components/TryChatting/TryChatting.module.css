@@ -24,7 +24,7 @@
 
 /* Frame 427322102 - Frame encapsulating title and text */
 .titleTextFrame {
-  width: 552px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -50,7 +50,8 @@
   font-family: sans-serif;
   border: none;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 700;
 }
 
 /* Title Styles */
@@ -83,12 +84,13 @@
   width: 360px;
   height: 360px;
   margin-right: 300px;
+  margin-top: 150px;
 }
 
 .ellipse {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 360px;
+  height: 360px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -99,8 +101,8 @@
 
 .imageContainer img {
   position: absolute;
-  width: 220px;
-  height: auto;
+  width: 310px;
+  height: 310;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

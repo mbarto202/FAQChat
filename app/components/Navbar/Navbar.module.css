@@ -29,12 +29,26 @@
 
 /* Media query for smaller screens */
 @media (max-width: 1300px) {
+  .navbar {
+    padding: 48px 35px 0 20px; /* Decrease the padding for smaller screens */
+  }
+
+  .logo {
+    margin-right: auto; /* Move the logo to the left */
+    padding-left: 10px;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger icon on small screens */
+    margin-left: auto; /* Move the hamburger to the right */
+  }
+
   .navLinks {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 100%;
-    right: 120px;
+    right: 20px;
     width: auto;
     padding: 10px;
   }

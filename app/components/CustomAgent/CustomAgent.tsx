@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const CustomAgent = () => {
   return (
     <section id="custom-agent">
-      <div>custom agent</div>
+      <div></div>
     </section>
   );
 };
