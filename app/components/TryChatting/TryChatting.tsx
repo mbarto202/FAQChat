@@ -9,6 +9,15 @@ import assistant from "../../assets/images/assistant.png";
 const TryChatting = () => {
   return (
     <section className={styles.tryChattingSection}>
+      <div className={styles.imageContainer}>
+        <div className={styles.ellipse}></div>
+        <Image
+          src={assistant}
+          alt="Description of the image"
+          width={220}
+          height={360}
+        />
+      </div>
       <div className={styles.contentFrame}>
         {" "}
         {/* Frame encapsulating the title, text, and button */}
@@ -24,15 +33,6 @@ const TryChatting = () => {
           </p>
           <button className={styles.chatButton}>Chat Here</button>
         </div>
-      </div>
-      <div className={styles.imageContainer}>
-        <div className={styles.ellipse}></div>
-        <Image
-          src={assistant}
-          alt="Description of the image"
-          width={220}
-          height={360}
-        />
       </div>
     </section>
   );

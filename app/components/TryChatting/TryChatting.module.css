@@ -9,6 +9,7 @@
   padding: 0px 72px 0px 40px;
   margin: 200px 0px;
   margin-left: 160px;
+  flex-direction: row-reverse;
 }
 
 /* Frame 427322103 - Content Frame encapsulating title, text, and button */
@@ -110,7 +111,121 @@
 }
 
 @media (max-width: 1300px) {
+  .tryChattingSection {
+    position: static;
+    width: 366px; /* Adjust to the provided width */
+    height: 498px; /* Adjust to the provided height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 44px; /* Add the specified gap */
+    padding: 0px;
+    margin: 100px auto; /* Adjust margins */
+  }
+
+  .contentFrame {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titleTextFrame {
+    position: static; /* Maintain normal flow */
+    width: 352px; /* Match the provided width */
+    height: auto; /* Allow height to adjust based on content */
+    display: flex;
+    flex-direction: column; /* Stack title and description vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+    gap: 16px; /* Maintain the gap between title and description */
+    padding: 0px;
+    margin: 36px 0px; /* Space above and below */
+  }
+
+  .title {
+    position: static; /* Change to static to follow the flow of the parent container */
+    width: 352px; /* Ensure it matches the frame width */
+    height: auto; /* Allow height to adjust based on content */
+    font-size: 52px;
+    line-height: 110%; /* Maintain the line height */
+    letter-spacing: 1%; /* Maintain letter spacing */
+    text-align: center; /* Center the text */
+    margin: 0; /* Reset margins for centering */
+    padding: 0; /* Reset padding if necessary */
+  }
+
+  .chatButton {
+    width: 100%; /* Make the button full width */
+    max-width: 366px; /* Limit to the specified width */
+    height: 52px; /* Keep the specified height */
+    display: flex;
+    justify-content: center; /* Center the button content */
+    align-items: center; /* Center the button content */
+    padding: 16px 20px; /* Add padding */
+    margin: 24px 0; /* Adjust margins for spacing */
+    border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      rgb(72, 68, 213) 8.928%,
+      rgb(132, 128, 255) 108.333%
+    );
+    color: white;
+    font-family: sans-serif;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+  }
+
   .imageContainer {
-    display: none;
+    position: relative; /* Relative to the parent section */
+    width: 176px;
+    height: 176px;
+    margin: 10px 0px -15px; /* Spacing around the image and ellipse */
+    flex: none;
+    order: 0;
+    flex-grow: 0; /* Prevent the container from resizing */
+  }
+
+  .ellipse {
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    left: 50%; /* Center horizontally */
+    top: 10px; /* Adjust to bring the ellipse slightly lower */
+    transform: translateX(-50%); /* Adjust the horizontal centering */
+    border-radius: 50%; /* Make it a circle */
+    background: rgba(255, 255, 255, 0.02);
+    z-index: 1;
+  }
+
+  .imageContainer img {
+    position: absolute;
+    width: 152px;
+    height: 152px;
+    left: 50%; /* Center horizontally */
+    top: 24px; /* Adjust to bring the image lower */
+    transform: translateX(-50%); /* Center the image horizontally */
+    z-index: 2;
+  }
+
+  .description {
+    position: static; /* Ensure it follows the flow of the parent container */
+    width: 352px; /* Keep the width consistent */
+    height: auto; /* Allow the height to adjust based on content */
+    display: flex; /* Enable flexbox for centering */
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center vertically within the container */
+    align-items: center; /* Center horizontally */
+    gap: 16px; /* Maintain the specified gap */
+    padding: 0; /* Reset padding if necessary */
+    margin: 6px 0; /* Maintain margin for spacing */
+    color: rgb(165, 164, 195); /* Keep the text color */
+    font-size: 22px; /* Keep the font size */
+    font-weight: 400; /* Keep the font weight */
+    line-height: 30px; /* Maintain the line height */
+    letter-spacing: 0%; /* Maintain letter spacing */
+    text-align: center; /* Center the text */
   }
 }
