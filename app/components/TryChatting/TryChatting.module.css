@@ -84,8 +84,10 @@
   position: relative;
   width: 360px;
   height: 360px;
-  margin-right: 300px;
+  margin-right: 360px;
   margin-top: 150px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .ellipse {
@@ -103,8 +105,8 @@
 .imageContainer img {
   position: absolute;
   width: 310px;
-  height: 310;
-  top: 50%;
+  height: 310px;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
