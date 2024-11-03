@@ -123,7 +123,7 @@
     align-items: center;
     gap: 44px; /* Add the specified gap */
     padding: 0px;
-    margin: 100px auto; /* Adjust margins */
+    margin: 150px auto; /* Adjust margins */
   }
 
   .contentFrame {
@@ -152,8 +152,9 @@
     font-size: 52px;
     line-height: 110%; /* Maintain the line height */
     letter-spacing: 1%; /* Maintain letter spacing */
-    text-align: center; /* Center the text */
+    text-align: left;
     margin: 0; /* Reset margins for centering */
+    margin-left: 55px;
     padding: 0; /* Reset padding if necessary */
   }
 
@@ -184,7 +185,7 @@
     position: relative; /* Relative to the parent section */
     width: 176px;
     height: 176px;
-    margin: 10px 0px -15px; /* Spacing around the image and ellipse */
+    margin: 40px 0px -20px; /* Spacing around the image and ellipse */
     flex: none;
     order: 0;
     flex-grow: 0; /* Prevent the container from resizing */
@@ -229,5 +230,10 @@
     line-height: 30px; /* Maintain the line height */
     letter-spacing: 0%; /* Maintain letter spacing */
     text-align: center; /* Center the text */
+  }
+
+  .logoText img {
+    width: 100px; /* Adjusted width for smaller screens */
+    height: auto; /* Maintain aspect ratio */
   }
 }
