@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "./TryChatting.module.css";
 import logo from "../../assets/images/faqlogo.png";
 import assistant from "../../assets/images/assistant.png";
+import Button from "../Button/Button";
 
 const TryChatting = () => {
   return (
@@ -31,7 +32,7 @@ const TryChatting = () => {
           <p className={styles.description}>
             Experience our FAQChat system and see how it works
           </p>
-          <button className={styles.chatButton}>Chat Here</button>
+          <Button text="Chat Here" style={{ margin: "64px 0px" }} />
         </div>
       </div>
     </section>

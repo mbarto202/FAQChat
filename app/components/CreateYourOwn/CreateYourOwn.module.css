@@ -11,6 +11,21 @@
   margin: 200px 0px;
 }
 
+/* Container for the input box */
+.inputFrame {
+  position: relative;
+  width: 1040px;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  border-radius: 12px;
+  background-color: rgb(31, 32, 50); /* Background for the whole frame */
+}
+
 /* Frame 427322055 - Title and Text Frame */
 .titleTextFrame {
   position: static;
@@ -23,4 +38,139 @@
   gap: 24px;
   padding: 0px;
   margin: 64px 0px;
+}
+
+/* Title only - Create your own FAQChat now */
+.titleTextFrame h2 {
+  position: static;
+  width: 579px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0px;
+  margin: 24px 0px;
+  color: rgb(255, 255, 255); /* White color */
+  font-size: 52px; /* Large font size */
+  font-weight: 700; /* Bold font weight */
+  line-height: 130%; /* Line height */
+  letter-spacing: 2%; /* Letter spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Text below the title - Upload text of any length below... */
+.titleTextFrame p {
+  position: static;
+  width: 658px;
+  height: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 0px;
+  margin: 24px 0px;
+  color: rgb(150, 151, 156); /* Light gray color */
+  font-size: 24px; /* Font size */
+  font-weight: 400; /* Regular weight */
+  line-height: 150%; /* Line height */
+  letter-spacing: 0%; /* No letter spacing */
+  text-align: center; /* Center align text */
+}
+
+/* Frame 427322105 - Input Box and Buttons Container */
+.inputButtonsFrame {
+  position: static;
+  width: 1040px;
+  height: auto; /* Allow height to adjust based on content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align input box at the top */
+  align-items: flex-end; /* Align buttons to the right */
+  gap: 40px;
+  padding: 0px;
+}
+
+/* Input Box */
+.inputBox {
+  width: 100%;
+  height: 100px;
+  padding: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* Button group aligned to the right */
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  gap: 24px; /* Space between buttons */
+  width: 100%; /* Take full width */
+}
+
+/* First button styling */
+.buttonLeft {
+  position: static;
+  width: 224px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border: 2px solid rgb(117, 137, 238); /* Light blue border */
+  border-radius: 8px;
+  background-color: transparent; /* Keep the background transparent */
+  color: rgb(117, 137, 238); /* Text color matching border */
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0px 24px; /* Apply margin as specified */
+}
+
+/* Hover effect for the first button */
+.buttonLeft:hover {
+  background-color: rgba(117, 137, 238, 0.1); /* Light background on hover */
+}
+
+/* Text styling inside the button */
+.buttonLeftText {
+  color: rgb(117, 137, 238); /* Text color */
+  font-size: 17px; /* Font size */
+  font-weight: 700; /* Font weight */
+  line-height: 24px; /* Line height */
+  letter-spacing: 1%; /* Letter spacing */
+  text-align: center; /* Align text center */
+  width: 128px; /* Width of the text area */
+  height: 12px; /* Height of the text area */
+}
+
+/* Text box (textarea) */
+.textArea {
+  position: static;
+  width: 984px;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  background-color: rgb(31, 32, 50); /* Same background color */
+  color: rgb(123, 121, 137); /* Text color */
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none; /* Remove border */
+  border-radius: 12px; /* Rounded corners */
+  resize: none; /* Prevent resizing */
+  outline: none; /* Remove focus outline */
+  box-sizing: border-box;
 }
