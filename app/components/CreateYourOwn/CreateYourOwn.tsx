@@ -20,9 +20,9 @@ const CreateYourOwn = () => {
         />
         <div className={styles.buttonGroup}>
           <button className={styles.buttonLeft}>
-            <span className={styles.buttonLeftText}>Upload</span>
+            <span className={styles.buttonLeftText}>Upload Text File</span>
           </button>
-          <Button text="Clear" />
+          <Button text="Generate AI Agent" />
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
+/* Container */
 .container {
-  position: static;
   width: 100%;
   height: 608px;
   display: flex;
@@ -7,13 +7,12 @@
   justify-content: flex-start;
   align-items: center; /* Center children horizontally */
   gap: 64px;
-  padding: 0px;
-  margin: 200px 0px;
+  padding: 0;
+  margin: 300px 0;
 }
 
 /* Container for the input box */
 .inputFrame {
-  position: relative;
   width: 1040px;
   height: 212px;
   display: flex;
@@ -23,136 +22,94 @@
   gap: 10px;
   padding: 28px;
   border-radius: 12px;
-  background-color: rgb(31, 32, 50); /* Background for the whole frame */
+  background-color: rgb(31, 32, 50);
 }
 
-/* Frame 427322055 - Title and Text Frame */
+/* Title and Text Frame */
 .titleTextFrame {
-  position: static;
   width: 1040px;
   height: 232px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 24px;
-  padding: 0px;
-  margin: 64px 0px;
+  gap: 20px;
 }
 
-/* Title only - Create your own FAQChat now */
 .titleTextFrame h2 {
-  position: static;
   width: 579px;
-  height: 136px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  padding: 0px;
-  margin: 24px 0px;
-  color: rgb(255, 255, 255); /* White color */
-  font-size: 52px; /* Large font size */
-  font-weight: 700; /* Bold font weight */
-  line-height: 130%; /* Line height */
-  letter-spacing: 2%; /* Letter spacing */
-  text-align: center; /* Center align text */
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: center;
 }
 
-/* Text below the title - Upload text of any length below... */
 .titleTextFrame p {
-  position: static;
   width: 658px;
-  height: 72px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-  padding: 0px;
-  margin: 24px 0px;
-  color: rgb(150, 151, 156); /* Light gray color */
-  font-size: 24px; /* Font size */
-  font-weight: 400; /* Regular weight */
-  line-height: 150%; /* Line height */
-  letter-spacing: 0%; /* No letter spacing */
-  text-align: center; /* Center align text */
+  color: rgb(150, 151, 156);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
 }
 
-/* Frame 427322105 - Input Box and Buttons Container */
+/* Input Box and Buttons Container */
 .inputButtonsFrame {
-  position: static;
   width: 1040px;
-  height: auto; /* Allow height to adjust based on content */
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Align input box at the top */
-  align-items: flex-end; /* Align buttons to the right */
+  justify-content: flex-start;
+  align-items: flex-end;
   gap: 40px;
-  padding: 0px;
+  padding: 0;
 }
 
-/* Input Box */
-.inputBox {
-  width: 100%;
-  height: 100px;
-  padding: 16px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  font-size: 18px;
-  box-sizing: border-box;
-}
-
-/* Button group aligned to the right */
+/* Button group */
 .buttonGroup {
   display: flex;
-  justify-content: flex-end; /* Align buttons to the right */
-  gap: 24px; /* Space between buttons */
-  width: 100%; /* Take full width */
+  justify-content: flex-end;
+  gap: 24px;
+  width: 100%;
 }
 
-/* First button styling */
+/* Button Styling */
 .buttonLeft {
-  position: static;
   width: 224px;
   height: 60px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 10px;
   padding: 16px 20px;
-  border: 2px solid rgb(117, 137, 238); /* Light blue border */
+  border: 2px solid rgb(117, 137, 238);
   border-radius: 8px;
-  background-color: transparent; /* Keep the background transparent */
-  color: rgb(117, 137, 238); /* Text color matching border */
+  background-color: transparent;
+  color: rgb(117, 137, 238);
   cursor: pointer;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  margin: 0px 24px; /* Apply margin as specified */
+  margin: 0 24px;
 }
 
-/* Hover effect for the first button */
 .buttonLeft:hover {
-  background-color: rgba(117, 137, 238, 0.1); /* Light background on hover */
+  background-color: rgba(117, 137, 238, 0.1);
 }
 
-/* Text styling inside the button */
 .buttonLeftText {
-  color: rgb(117, 137, 238); /* Text color */
-  font-size: 17px; /* Font size */
-  font-weight: 700; /* Font weight */
-  line-height: 24px; /* Line height */
-  letter-spacing: 1%; /* Letter spacing */
-  text-align: center; /* Align text center */
-  width: 128px; /* Width of the text area */
-  height: 12px; /* Height of the text area */
+  color: rgb(117, 137, 238);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1%;
+  text-align: center;
+  width: 160px;
+  height: 12px;
 }
 
-/* Text box (textarea) */
+/* Textarea */
 .textArea {
-  position: static;
   width: 984px;
   height: 212px;
   display: flex;
@@ -161,16 +118,83 @@
   align-items: flex-start;
   gap: 10px;
   padding: 28px;
-  background-color: rgb(31, 32, 50); /* Same background color */
-  color: rgb(123, 121, 137); /* Text color */
+  background-color: rgb(31, 32, 50);
+  color: rgb(123, 121, 137);
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0%;
   text-align: left;
-  border: none; /* Remove border */
-  border-radius: 12px; /* Rounded corners */
-  resize: none; /* Prevent resizing */
-  outline: none; /* Remove focus outline */
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
   box-sizing: border-box;
+}
+
+/* Responsive container for smaller screens */
+@media (max-width: 1300px) {
+  .container {
+    width: 366px;
+    height: 511px;
+    gap: 36px;
+    margin: 200px 0;
+  }
+
+  .titleTextFrame {
+    width: auto;
+    gap: 12px;
+    margin: 2px auto;
+  }
+
+  .titleTextFrame h2 {
+    width: 366px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+  }
+
+  .titleTextFrame p {
+    width: 366px;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .inputButtonsFrame {
+    width: 366px;
+    height: auto;
+    gap: 24px;
+    margin: 36px 0;
+  }
+
+  .buttonGroup {
+    width: 342px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .buttonGroup Button {
+    width: 100%;
+    max-width: 366px;
+    height: 52px;
+    margin: 24px 0;
+    font-size: 14px;
+  }
+
+  .buttonLeftText {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .textArea {
+    width: 366px;
+    height: 249px;
+    padding: 20px;
+    font-size: 17px;
+  }
 }
