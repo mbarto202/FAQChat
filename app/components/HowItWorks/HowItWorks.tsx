@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const HowItWorks = () => {
   return (
     <section id="how-it-works">
-      <div>how it works</div>
+      <div></div>
     </section>
   );
 };

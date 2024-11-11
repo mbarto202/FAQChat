@@ -1,48 +1,57 @@
 .navItem {
-    position: relative;
-  }
-  
-  .navLink {
-    display: flex;
-    align-items: center;
-    color: white;
-    font-family: 'Gilroy', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    text-decoration: none;
-    margin-right: 20px;
-  }
-  
-  .navLink:hover {
-    color: #5098ebd5;
-  }
-  
-  .dropdownIcon {
-    margin-left: 8px;
-    font-size: 12px;
-    color: white;
-  }
-  
+  position: relative;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-family: "Gilroy", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navLink:hover {
+  color: #5098ebd5;
+}
+
+.dropdownIcon {
+  margin-left: 8px;
+  font-size: 12px;
+  color: white;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  list-style-type: none;
+}
+
+.dropdownMenu li {
+  padding: 8px 0;
+}
+
+.dropdownMenu a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdownMenu a:hover {
+  color: #5098ebd5;
+}
+
+@media (max-width: 1300px) {
   .dropdownMenu {
     position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: white;
+    top: 0;
+    left: -80%;
+    color: white;
     padding: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     list-style-type: none;
   }
-  
-  .dropdownMenu li {
-    padding: 8px 0;
-  }
-  
-  .dropdownMenu a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  .dropdownMenu a:hover {
-    color: #5098ebd5;
-  }
-  
+}

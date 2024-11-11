@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import styles from './NavBarLink.module.css';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import styles from "./NavBarLink.module.css";
 
 interface NavBarLinkProps {
   title: string;
   href: string;
-  links?: { name: string, href: string }[];  // Optional dropdown links
+  links?: { name: string; href: string }[]; // Optional dropdown links
 }
 
 const NavBarLink: React.FC<NavBarLinkProps> = ({ title, href, links }) => {
@@ -18,11 +18,24 @@ const NavBarLink: React.FC<NavBarLinkProps> = ({ title, href, links }) => {
     setDropdownOpen(!dropdownOpen);
   };
 
+  const handleMouseLeave = () => {
+    if (links) setDropdownOpen(false);
+  };
+
   return (
-    <li className={styles.navItem} onClick={links ? toggleDropdown : undefined}>
+    <li
+      className={styles.navItem}
+      onClick={links ? toggleDropdown : undefined}
+      onMouseLeave={handleMouseLeave}
+    >
       <a className={styles.navLink} href={href}>
         {title}
-        {links && <FontAwesomeIcon icon={faChevronDown} className={styles.dropdownIcon} />}
+        {links && (
+          <FontAwesomeIcon
+            icon={faChevronDown}
+            className={styles.dropdownIcon}
+          />
+        )}
       </a>
       {dropdownOpen && links && (
         <ul className={styles.dropdownMenu}>
