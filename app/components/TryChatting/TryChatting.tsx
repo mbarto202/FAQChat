@@ -32,7 +32,7 @@ const TryChatting = () => {
           <p className={styles.description}>
             Experience our FAQChat system and see how it works
           </p>
-          <Button text="Chat Here" style={{ margin: "64px 0px" }} />
+          <Button text="Chat Here" style={{ margin: "30px 0px" }} />
         </div>
       </div>
     </section>
