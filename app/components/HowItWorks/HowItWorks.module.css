@@ -10,7 +10,7 @@
   font-size: 52px;
   font-weight: 700;
   line-height: 130%;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
   margin-bottom: 40px;
 }
@@ -59,10 +59,8 @@
 .descriptionText {
   font-size: 18px;
   line-height: 140%;
-  width: 305px;
   color: rgb(150, 151, 156);
-  text-align: left;
-  margin-left: 40px;
+  margin-left: 48px;
 }
 
 @media (max-width: 1300px) {
@@ -76,6 +74,7 @@
     font-size: 32px;
     line-height: 44px;
     margin-bottom: 32px;
+    text-align: left;
   }
 
   .content {
@@ -99,5 +98,8 @@
   .descriptionText {
     font-size: 16px;
     line-height: 24px;
+    text-align: left;
+    width: 305px;
+    margin-left: 40px;
   }
 }
