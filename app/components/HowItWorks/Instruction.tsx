@@ -11,22 +11,16 @@ const Instruction: React.FC<InstructionProps> = ({
   number,
   title,
   description,
-}) => {
-  return (
-    <div className={styles.instruction}>
-      <div className={styles.innerFrame}>
-        <div className={styles.number}>
-          <div className={styles.numberBackground}>
-            <span className={styles.numberText}>{number}</span>
-          </div>
-        </div>
-        <div className={styles.instructionTitle}>{title}</div>
+}) => (
+  <div className={styles.instruction}>
+    <div className={styles.innerFrame}>
+      <div className={styles.numberBackground}>
+        <span className={styles.numberText}>{number}</span>
       </div>
-      <div className={styles.description}>
-        <p className={styles.descriptionText}>{description}</p>
-      </div>
+      <div className={styles.instructionTitle}>{title}</div>
     </div>
-  );
-};
+    <p className={styles.descriptionText}>{description}</p>
+  </div>
+);
 
 export default Instruction;

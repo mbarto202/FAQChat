@@ -1,334 +1,103 @@
 .howItWorksSection {
-  position: static;
   width: 920px;
-  height: 570px;
+  margin: 200px auto;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 40px;
-  padding: 0px;
-  margin: 200px auto;
 }
 
 .title {
-  position: static;
-  width: 920px;
-  height: 68px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 40px;
-  padding: 0px;
-  margin: 40px 0px;
-
-  color: rgb(255, 255, 255);
   font-size: 52px;
   font-weight: 700;
   line-height: 130%;
-  letter-spacing: 2%;
-  text-align: center;
-  align-self: stretch;
-  flex-grow: 0;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .content {
-  position: static;
-  width: 920px;
-  height: 462px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 36;
-  padding: 0px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-  margin: 40px 0px;
+  gap: 36px;
 }
 
+/* Instruction styles */
 .instruction {
-  position: static;
-  width: 920px;
-  height: 130px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
   gap: 16px;
-  padding: 0px;
-  margin: 36px 0px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .innerFrame {
-  position: static;
-  width: 920px;
-  height: 42px;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   gap: 16px;
-  padding: 0px;
-  margin: 16px 0px;
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
+}
+
+.numberBackground {
+  width: 30px;
+  height: 30px;
+  background: rgb(117, 137, 238);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numberText {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .instructionTitle {
   font-size: 30px;
   font-weight: 700;
   color: rgb(229, 229, 230);
-  line-height: 140%;
-  text-align: left;
-}
-
-.number {
-  width: 30px;
-  height: 34px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4px 0px 0px 0px;
-  font-size: 24px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-  background-color: rgb(15, 17, 29);
-  border-radius: 50%;
-  text-align: center;
-  margin: 0px 16px;
-}
-
-.numberBackground {
-  width: 30px;
-  height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(117, 137, 238);
-  border-radius: 50%;
-  padding: 11.36px 11.36px 11.36px 10px;
-  position: absolute;
-  z-index: 1;
-}
-
-.number span {
-  position: relative;
-  z-index: 2;
-  font-size: 16px;
-  font-weight: 700;
-  color: rgb(255, 255, 255);
-}
-
-.numberText {
-  width: 5.39px;
-  height: 12.41px;
-
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 11.36px 0px;
-  position: relative;
-  z-index: 2;
-}
-
-.description {
-  position: static;
-  width: 920px;
-  height: 72px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-
-  color: rgb(229, 229, 230);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 140%;
-  letter-spacing: 0%;
-  text-align: left;
-
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
 }
 
 .descriptionText {
-  position: static;
-  width: 874px;
-  height: 72px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px 0px 0px 68px;
-
+  font-size: 18px;
+  line-height: 140%;
+  width: 305px;
   color: rgb(150, 151, 156);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 0%;
   text-align: left;
-
-  flex: none;
-  order: 0;
-  flex-grow: 1;
-  margin: 0px 10px;
+  margin-left: 40px;
 }
 
 @media (max-width: 1300px) {
   .howItWorksSection {
-    text-align: center;
+    width: 366px;
     margin: 100px auto;
+    text-align: center;
   }
 
   .title {
-    position: static;
-    width: 366px;
-    height: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 32;
-    padding: 0px;
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 32px 0px;
-    color: rgb(255, 255, 255);
     font-size: 32px;
-    font-weight: 700;
     line-height: 44px;
-    letter-spacing: 1%;
-    text-align: left;
+    margin-bottom: 32px;
   }
 
   .content {
-    width: 366px;
-    height: 428px;
-    justify-content: flex-start;
-    align-items: flex-start;
     gap: 28px;
-    margin: 32px 0px;
   }
 
   .numberBackground {
     width: 22px;
     height: 22px;
-    padding: 8.33px 8.33px 8.33px 7.33px;
-    gap: 8.33px;
-    border-radius: 166.67px;
-    background: rgb(117, 137, 238);
-    margin: 0px 10px;
   }
 
-  .number {
-    /* Frame 427322056 */
-    position: static;
-    width: 22px;
-    height: 24px;
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10;
-    padding: 2px 0px 0px 0px;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 16px;
-  }
-
-  .number span {
-    position: relative;
-    z-index: 2;
+  .numberText {
     font-size: 14px;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-  }
-
-  .instruction {
-    margin: 0px 0px; /* Reduced top and bottom margin for less spacing */
-    gap: 0px; /* Slightly reduced gap between elements inside the instruction */
   }
 
   .instructionTitle {
-    width: 328px;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 16px;
-    padding: 0px;
-    color: rgb(229, 229, 230);
     font-size: 20px;
-    font-weight: 700;
     line-height: 30px;
-    letter-spacing: 0%;
-    text-align: left;
-    margin-left: -8px;
-  }
-
-  .description {
-    position: static;
-    width: 366px;
-    height: 72px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10;
-    padding: 0px 0px 0px 21px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
   }
 
   .descriptionText {
-    /* Provide text of any length and we'll extract questions and answers to create a detailed FAQ.page. */
-    position: static;
-    width: 328px;
-    height: 72px;
-    /* Auto layout */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 10;
-    padding: 0px 0px 0px 38px;
-
-    /* Inside Auto Layout */
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-    margin: 0px 1px;
-    color: rgb(150, 151, 156);
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
-    letter-spacing: 0%;
-    text-align: left;
   }
 }
