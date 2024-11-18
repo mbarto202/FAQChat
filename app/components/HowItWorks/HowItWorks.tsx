@@ -5,7 +5,7 @@ import styles from "./HowItWorks.module.css";
 const HowItWorks = () => {
   return (
     <section id="how-it-works" className={styles.howItWorksSection}>
-      <h2 className={styles.title}>How It Works.</h2>
+      <h2 className={styles.title}>How it works.</h2>
       <div className={styles.content}>
         <Instruction
           number={1}

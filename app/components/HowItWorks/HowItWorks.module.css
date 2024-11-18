@@ -165,7 +165,6 @@
   order: 1;
   align-self: stretch;
   flex-grow: 0;
-  margin: 16px 0px;
 }
 
 .descriptionText {
@@ -190,4 +189,146 @@
   order: 0;
   flex-grow: 1;
   margin: 0px 10px;
+}
+
+@media (max-width: 1300px) {
+  .howItWorksSection {
+    text-align: center;
+    margin: 100px auto;
+  }
+
+  .title {
+    position: static;
+    width: 366px;
+    height: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 32;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1%;
+    text-align: left;
+  }
+
+  .content {
+    width: 366px;
+    height: 428px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+    margin: 32px 0px;
+  }
+
+  .numberBackground {
+    width: 22px;
+    height: 22px;
+    padding: 8.33px 8.33px 8.33px 7.33px;
+    gap: 8.33px;
+    border-radius: 166.67px;
+    background: rgb(117, 137, 238);
+    margin: 0px 10px;
+  }
+
+  .number {
+    /* Frame 427322056 */
+    position: static;
+    width: 22px;
+    height: 24px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10;
+    padding: 2px 0px 0px 0px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 16px;
+  }
+
+  .number span {
+    position: relative;
+    z-index: 2;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+  }
+
+  .instruction {
+    margin: 0px 0px; /* Reduced top and bottom margin for less spacing */
+    gap: 0px; /* Slightly reduced gap between elements inside the instruction */
+  }
+
+  .instructionTitle {
+    width: 328px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+    padding: 0px;
+    color: rgb(229, 229, 230);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: -8px;
+  }
+
+  .description {
+    position: static;
+    width: 366px;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 0px 0px 0px 21px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .descriptionText {
+    /* Provide text of any length and we'll extract questions and answers to create a detailed FAQ.page. */
+    position: static;
+    width: 328px;
+    height: 72px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10;
+    padding: 0px 0px 0px 38px;
+
+    /* Inside Auto Layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 1px;
+    color: rgb(150, 151, 156);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 }
