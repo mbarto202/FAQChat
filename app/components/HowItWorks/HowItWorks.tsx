@@ -1,4 +1,5 @@
 import React from "react";
+import Instruction from "./Instruction";
 import styles from "./HowItWorks.module.css";
 
 const HowItWorks = () => {
@@ -6,24 +7,21 @@ const HowItWorks = () => {
     <section id="how-it-works" className={styles.howItWorksSection}>
       <h2 className={styles.title}>How It Works.</h2>
       <div className={styles.content}>
-        <div className={styles.instruction}>
-          <div className={styles.innerFrame}>
-            <div className={styles.number}>
-              <div className={styles.numberBackground}>
-                <span className={styles.numberText}>1</span>
-              </div>
-            </div>
-            <div className={styles.instructionTitle}>Upload Your Text</div>
-          </div>
-          <div className={styles.description}>
-            <p className={styles.descriptionText}>
-              Provide text of any length and we'll extract questions and answers
-              to create a detailed FAQ page.
-            </p>
-          </div>
-        </div>
-        <div className={styles.instruction}>Edit for Accuracy</div>
-        <div className={styles.instruction}>Generate a Proactive AI Agent</div>
+        <Instruction
+          number={1}
+          title="Upload Your Text"
+          description="Provide text of any length and we'll extract questions and answers to create a detailed FAQ page."
+        />
+        <Instruction
+          number={2}
+          title="Edit for Accuracy"
+          description={`You can then refine these questions and answers, ensuring they serve as the definitive "source of truth" for your AI agent's responses.`}
+        />
+        <Instruction
+          number={3}
+          title="Generate a Proactive AI Agent"
+          description="We will develop an AI agent that uses decision-tree logic to handle inquiries and even pose questions, enhancing your insight into your audience's needs"
+        />
       </div>
     </section>
   );
