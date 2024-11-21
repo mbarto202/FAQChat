@@ -35,6 +35,7 @@ const TryChatting = () => {
           <Button text="Chat Here" style={{ margin: "30px 0px" }} />
         </div>
       </div>
+      <div style={{ height: "200px", backgroundColor: "transparent" }}></div>
     </section>
   );
 };
