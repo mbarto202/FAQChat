@@ -34,7 +34,7 @@
   text-align: center;
 }
 
-.contentFrame {
+.content {
   position: static;
   width: 800px;
   height: 531px;
@@ -48,6 +48,66 @@
   order: 1;
   flex-grow: 0;
   margin: 56px 0px;
+}
+
+.chatFrame1 {
+  position: static;
+  width: 800px;
+  height: 148px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 28px 0px;
+}
+
+.chatFrame2 {
+  position: static;
+  width: 800px;
+  height: 220px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 28px 0px;
+}
+
+.chatFrame3 {
+  position: static;
+  width: 800px;
+  height: 107px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 28px 0px;
 }
 
 @media (max-width: 600px) {

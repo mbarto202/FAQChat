@@ -8,8 +8,16 @@ const UsersLoveIt = () => {
         <div className={styles.titleContainer}>
           <h2>Users love it because:</h2>
         </div>
-        <div className={styles.contentContainer}>
-          <p>Content div</p>
+        <div className={styles.content}>
+          <div className={styles.chatFrame1}>
+            <p>chat1</p>
+          </div>
+          <div className={styles.chatFrame2}>
+            <p>chat2</p>
+          </div>
+          <div className={styles.chatFrame3}>
+            <p>chat3</p>
+          </div>
         </div>
       </div>
     </section>
