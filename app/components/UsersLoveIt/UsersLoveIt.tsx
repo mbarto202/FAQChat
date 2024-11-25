@@ -10,7 +10,10 @@ const UsersLoveIt = () => {
         </div>
         <div className={styles.content}>
           <div className={styles.chatFrame1}>
-            <p>chat1</p>
+            <div className={styles.cFrameContent1}>
+              <div className={styles.textBubble}>text bubble</div>
+              <div className={styles.img}>img</div>
+            </div>
           </div>
           <div className={styles.chatFrame2}>
             <p>chat2</p>
