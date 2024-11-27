@@ -26,13 +26,13 @@ const UsersLoveIt = () => {
           </div>
           <div className={styles.chatFrame2}>
             <div className={styles.cFrameContent2}>
-              <div className={styles.textBubble2}>Text bubble 2</div>
               <div className={styles.imageWrapper2}>
                 <div className={styles.ellipse7}></div>
                 <div className={styles.image2}>
                   <Image src={img2} alt="Description" />
                 </div>
               </div>
+              <div className={styles.textBubble2}>Text bubble 2</div>
             </div>
           </div>
           <div className={styles.chatFrame3}>
