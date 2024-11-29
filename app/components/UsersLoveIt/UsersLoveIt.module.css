@@ -158,7 +158,6 @@
   height: 92px;
 }
 
-/* Ellipse 7 */
 .ellipse7 {
   position: absolute;
   width: 92px;
@@ -167,17 +166,16 @@
   top: 0;
   background: rgb(255, 255, 255, 0.05);
   border-radius: 50%;
-  z-index: 2; /* Below image but above Ellipse 6 */
+  z-index: 2;
 }
 
-/* Image */
 .image {
   position: absolute;
   width: 80.96px;
   height: 80.96px;
   left: 5.52px;
   top: 5.52px;
-  z-index: 3; /* Above both ellipses */
+  z-index: 3;
 }
 
 .image2 {
@@ -190,11 +188,11 @@
 
 .image3 {
   position: absolute;
-  width: 80px;
-  height: 80px;
-  top: 6px; /* Adjust for alignment */
+  width: 92px;
+  height: 92px;
+  top: 6px;
   left: 6px;
-  z-index: 3; /* Top layer */
+  z-index: 3;
 }
 
 .textBubble {
