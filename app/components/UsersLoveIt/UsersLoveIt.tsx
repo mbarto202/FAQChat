@@ -37,12 +37,15 @@ const UsersLoveIt = () => {
           </div>
           <div className={styles.chatFrame3}>
             <div className={styles.cFrameContent3}>
-              <div className={styles.textBubble3}>Text bubble 3</div>
               <div className={styles.imageWrapper3}>
                 <div className={styles.ellipse7}></div>
                 <div className={styles.image3}>
                   <Image src={img3} alt="Description" />
                 </div>
+              </div>
+              <div className={styles.textBubble3}>
+                <div className={styles.funText}>It’s fun!</div>
+                <div className={styles.arrow}></div>
               </div>
             </div>
           </div>
