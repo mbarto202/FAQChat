@@ -21,7 +21,12 @@ const UsersLoveIt = () => {
                   <Image src={img1} alt="Description" />
                 </div>
               </div>
-              <div className={styles.textBubble}>Text bubble 1</div>
+              <div className={styles.textBubble}>
+                <div className={styles.textContent1}>
+                  Who likes reading really long FAQs?
+                </div>
+                <div className={styles.arrow1}></div>
+              </div>
             </div>
           </div>
           <div className={styles.chatFrame2}>
@@ -52,7 +57,7 @@ const UsersLoveIt = () => {
               </div>
               <div className={styles.textBubble3}>
                 <div className={styles.funText}>It’s fun!</div>
-                <div className={styles.arrow}></div>
+                <div className={styles.arrow3}></div>
               </div>
             </div>
           </div>

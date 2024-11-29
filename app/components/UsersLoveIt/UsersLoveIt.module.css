@@ -201,6 +201,7 @@
   position: relative;
   width: 242px;
   height: 104px;
+  top: -15px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -261,6 +262,25 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.textContent1 {
+  position: static;
+  width: 197px;
+  height: 108px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 20px 19px 16px 20px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0px 0px -26px 10px;
+}
+
 .textBubble3 .funText {
   position: static;
   width: 90px;
@@ -299,7 +319,24 @@
   margin-bottom: -12px;
 }
 
-.arrow {
+.arrow1 {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  bottom: 0px;
+  right: -15px;
+  flex: none;
+  order: undefined;
+  flex-grow: 0;
+  margin: 0px 8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgb(117, 137, 238);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(190deg);
+}
+
+.arrow3 {
   position: absolute;
   width: 30px;
   height: 12px;
