@@ -32,7 +32,14 @@ const UsersLoveIt = () => {
                   <Image src={img2} alt="Description" />
                 </div>
               </div>
-              <div className={styles.textBubble2}>Text bubble 2</div>
+              <div className={styles.textBubble2}>
+                <div className={styles.textContent2}>
+                  They can ask very complex questions, and the AI can
+                  extrapolate between all of the answers within the FAQ to
+                  answer.
+                </div>
+                <div className={styles.arrow2}></div>
+              </div>
             </div>
           </div>
           <div className={styles.chatFrame3}>

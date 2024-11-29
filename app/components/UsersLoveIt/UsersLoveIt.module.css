@@ -221,7 +221,7 @@
   width: 475px;
   height: 176px;
   left: 120px;
-  top: 0;
+  top: -15px;
   bottom: 0;
   display: flex;
   flex-direction: row;
@@ -239,12 +239,12 @@
 }
 
 .textBubble3 {
-  position: absolute;
+  position: relative;
   width: 137px;
   height: 63px;
   left: 0;
   right: 6px;
-  top: 0;
+  top: -15px;
   bottom: 0;
   display: flex;
   flex-direction: row;
@@ -261,22 +261,17 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Styling for the text "It's fun!" */
 .textBubble3 .funText {
   position: static;
   width: 90px;
   height: 25px;
-
-  /* Auto layout */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
   padding: 0;
-
-  /* Text Styling */
-  color: rgb(0, 0, 0); /* Black text */
+  color: rgb(0, 0, 0);
   font-size: 28px;
   font-weight: 500;
   line-height: 100%;
@@ -285,17 +280,52 @@
   margin: 0px 8px;
 }
 
+.textContent2 {
+  position: static;
+  width: 430px;
+  height: 144px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 16px 20px 16px 19px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: -12px;
+}
+
 .arrow {
   position: absolute;
-  width: 30px; /* Width of the curved part */
-  height: 12px; /* Height of the curved part */
-  background: rgb(117, 137, 238); /* Matches the bubble color */
-  bottom: 0px; /* Adjust to align with bubble */
-  right: -10px; /* Align to the bottom-right corner */
-  border-top-left-radius: 20px; /* Curves the top */
-  border-top-right-radius: 20px; /* Curves the top */
-  clip-path: polygon(50% 100%, 0 0, 100% 0); /* Creates a triangular tip */
+  width: 30px;
+  height: 12px;
+  background: rgb(117, 137, 238);
+  bottom: 0px;
+  right: -10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
   transform: rotate(190deg);
+}
+
+.arrow2 {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  flex: none;
+  order: undefined;
+  flex-grow: 0;
+  bottom: 0px;
+  left: -6px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgb(164, 177, 244);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(170deg);
 }
 
 @media (max-width: 600px) {
