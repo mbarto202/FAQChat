@@ -15,7 +15,7 @@ const UsersLoveIt = () => {
       arrowClass: styles.arrow1,
       text: "Who likes reading really long FAQs?",
       imageWrapperClass: styles.imageWrapper,
-      imgClass: styles.image, // Use the generic image class
+      imgClass: styles.image,
       imgSrc: img1,
       imgAlt: "User Feedback 1",
     },

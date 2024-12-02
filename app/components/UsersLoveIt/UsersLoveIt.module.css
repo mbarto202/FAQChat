@@ -403,4 +403,112 @@
     padding: 0px;
     margin: 44px 0px;
   }
+
+  .chatFrame1 {
+    position: relative;
+    width: 366px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .chatFrame2 {
+    position: static;
+    width: 366px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .chatFrame3 {
+    position: static;
+    width: 366px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .cFrameContent1 {
+    position: static;
+    width: 243px;
+    height: 100px;
+    margin: 10px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .textBubble {
+    width: 164px;
+    height: 90px;
+    left: 0;
+    right: 3px;
+    top: 0;
+    bottom: -22px;
+    padding: 12px 15px 12px 16px;
+  }
+
+  .textContent1 {
+    width: 133px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8;
+    padding: 12px 15px 12px 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+  }
+
+  .ellipse7 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 0;
+  }
 }
