@@ -36,7 +36,7 @@ const UsersLoveIt = () => {
       frameClass: styles.chatFrame3,
       contentClass: styles.cFrameContent3,
       textBubbleClass: styles.textBubble3,
-      textContentClass: styles.funText,
+      textContentClass: styles.textContent3,
       arrowClass: styles.arrow3,
       text: "It’s fun!",
       imageWrapperClass: styles.imageWrapper3,

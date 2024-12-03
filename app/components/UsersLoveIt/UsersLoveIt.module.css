@@ -190,8 +190,6 @@
   position: absolute;
   width: 92px;
   height: 92px;
-  top: 6px;
-  left: 6px;
   z-index: 3;
 }
 
@@ -279,7 +277,7 @@
   margin: 0px 0px -26px 10px;
 }
 
-.textBubble3 .funText {
+.textContent3 {
   position: static;
   width: 90px;
   height: 25px;
@@ -435,7 +433,7 @@
   }
 
   .chatFrame3 {
-    position: static;
+    position: relative;
     width: 366px;
     height: 81px;
     display: flex;
@@ -469,6 +467,16 @@
     margin: 10px 0px;
   }
 
+  .cFrameContent3 {
+    position: static;
+    width: 179px;
+    height: 81px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+  }
+
   .textBubble {
     width: 164px;
     height: 90px;
@@ -492,6 +500,21 @@
     background: rgb(164, 177, 244);
   }
 
+  .textBubble3 {
+    width: 100px;
+    height: 49px;
+    left: 0;
+    right: 3px;
+    top: -10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 19px 12px 20px;
+  }
+
   .textContent1 {
     width: 133px;
     height: 66px;
@@ -512,7 +535,6 @@
   }
 
   .textContent2 {
-    position: static;
     width: 223px;
     height: 110px;
     display: flex;
@@ -533,6 +555,26 @@
     text-align: left;
   }
 
+  .textContent3 {
+    width: 61px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    text-align: right;
+  }
+
   .imageWrapper {
     position: absolute;
     bottom: 0;
@@ -546,6 +588,15 @@
     width: 64px;
     height: 64px;
     bottom: 0;
+  }
+
+  .imageWrapper3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
   }
 
   .image {
@@ -562,6 +613,14 @@
     height: 69.09px;
     left: -0.36px;
     top: -2.54px;
+  }
+
+  .image3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 0;
   }
 
   .ellipse7 {
