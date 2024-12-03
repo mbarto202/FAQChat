@@ -25,8 +25,7 @@ const UsersLoveIt = () => {
       textBubbleClass: styles.textBubble2,
       textContentClass: styles.textContent2,
       arrowClass: styles.arrow2,
-      text: `They can ask very complex questions, and the AI can extrapolate
-             between all of the answers within the FAQ to answer.`,
+      text: `They can ask very complex questions, and the AI can extrapolate between all of the answers within the FAQ to answer.`,
       imageWrapperClass: styles.imageWrapper2,
       imgClass: styles.image2,
       imgSrc: img2,
@@ -40,7 +39,7 @@ const UsersLoveIt = () => {
       arrowClass: styles.arrow3,
       text: "It’s fun!",
       imageWrapperClass: styles.imageWrapper3,
-      imgClass: styles.image3, // Use the image3-specific class
+      imgClass: styles.image3,
       imgSrc: img3,
       imgAlt: "User Feedback 3",
     },
@@ -53,22 +52,36 @@ const UsersLoveIt = () => {
           <h2>Users love it because:</h2>
         </div>
         <div className={styles.content}>
-          {chatFrames.map((frame, index) => (
-            <div key={index} className={frame.frameClass}>
-              <div className={frame.contentClass}>
-                <div className={frame.imageWrapperClass}>
-                  <div className={styles.ellipse7}></div>
-                  <div className={frame.imgClass}>
-                    <Image src={frame.imgSrc} alt={frame.imgAlt} />
+          {chatFrames.map(
+            (
+              {
+                frameClass,
+                contentClass,
+                imageWrapperClass,
+                imgClass,
+                imgSrc,
+                imgAlt,
+                textBubbleClass,
+                textContentClass,
+                arrowClass,
+                text,
+              },
+              index
+            ) => (
+              <div key={index} className={frameClass}>
+                <div className={contentClass}>
+                  <div className={imageWrapperClass}>
+                    <div className={styles.ellipse7}></div>
+                    <Image className={imgClass} src={imgSrc} alt={imgAlt} />
+                  </div>
+                  <div className={textBubbleClass}>
+                    <div className={textContentClass}>{text}</div>
+                    <div className={arrowClass}></div>
                   </div>
                 </div>
-                <div className={frame.textBubbleClass}>
-                  <div className={frame.textContentClass}>{frame.text}</div>
-                  <div className={frame.arrowClass}></div>
-                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </section>
