@@ -11,7 +11,15 @@ const CustomAgent = () => {
             Leave your email here and we’ll contact you.
           </p>
         </div>
-        <div className={styles.emailForm}>Email form</div>
+        <div className={styles.emailForm}>
+          <form className={styles.form}>
+            <input
+              className={styles.placeholder}
+              type="email"
+              placeholder="Enter your email"
+            />
+          </form>
+        </div>
       </div>
     </section>
   );
