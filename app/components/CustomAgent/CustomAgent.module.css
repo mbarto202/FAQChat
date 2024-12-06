@@ -95,7 +95,7 @@
 }
 
 .form {
-  position: static;
+  position: relative;
   width: 920px;
   height: 80px;
   display: flex;
@@ -136,4 +136,53 @@
   background: none;
   border: none;
   outline: none;
+}
+
+.submitButton {
+  position: absolute;
+  right: -10px;
+  width: 200px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  flex: none;
+  order: undefined;
+  flex-grow: 0;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(72, 68, 213) 8.928%,
+    rgb(132, 128, 255) 108.333%
+  );
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButtonText {
+  position: static;
+  width: 160px;
+  height: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 0px 10px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1%;
+  text-align: center;
 }

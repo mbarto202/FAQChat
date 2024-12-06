@@ -18,6 +18,9 @@ const CustomAgent = () => {
               type="email"
               placeholder="Enter your email"
             />
+            <button type="submit" className={styles.submitButton}>
+              <span className={styles.submitButtonText}>Submit Email</span>
+            </button>
           </form>
         </div>
       </div>
