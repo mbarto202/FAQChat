@@ -3,7 +3,7 @@
   height: 264px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 64px;
   margin: 200px 0;
 }
@@ -119,11 +119,128 @@
   .container {
     width: 366px;
     height: 276px;
-    gap: 32px;
+    gap: 0px;
     padding: 0;
     margin: 100px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .titleContainer {
+    width: 366px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0;
+    margin: 32px auto;
+  }
+
+  .titleText {
+    width: 366px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+    margin: 8px auto; /* Centers the element horizontally */
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1%;
+    text-align: left; /* Changed from 'left' to 'center' for better alignment */
+  }
+
+  .smallerText {
+    width: 340px;
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 0;
+    margin: 8px 0; /* Centers the text horizontally */
+    color: rgb(150, 151, 156);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left; /* Changed from 'left' to 'center' for better alignment */
+  }
+
+  .form {
+    width: 366px;
+    height: 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+    margin: 32px auto;
+    border-radius: 4px;
+    background: rgb(31, 32, 50);
+  }
+
+  .placeholder {
+    width: 334px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 25px 0px;
+    color: rgb(195, 194, 199);
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+  }
+
+  .submitButton {
+    width: 366px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    margin-top: 80px;
+    margin-right: -13px;
+    border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      rgb(72, 68, 213) 8.928%,
+      rgb(132, 128, 255) 108.333%
+    );
+    border: none;
+    cursor: pointer;
+  }
+
+  .submitButtonText {
+    width: 326px;
+    height: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    margin: 0 10px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1%;
+    text-align: center;
   }
 }
