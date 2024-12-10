@@ -1,9 +1,30 @@
-import React from 'react';
+import React from "react";
+import styles from "./CreateYourOwn.module.css";
+import Button from "../Button/Button";
 
 const CreateYourOwn = () => {
   return (
-    <section id="create-your-own">
-      <div>create your own</div>
+    <section className={styles.container}>
+      <div className={styles.titleTextFrame}>
+        <h2>Create your own FAQChat now</h2>
+        <p>
+          Upload text of any length below, and we will convert it <br />
+          into an organized FAQ that your audience can chat with.
+        </p>
+      </div>
+
+      <div className={styles.inputButtonsFrame}>
+        <textarea
+          className={styles.textArea}
+          placeholder="Paste unlimited text here"
+        />
+        <div className={styles.buttonGroup}>
+          <button className={styles.buttonLeft}>
+            <span className={styles.buttonLeftText}>Upload Text File</span>
+          </button>
+          <Button text="Generate AI Agent" />
+        </div>
+      </div>
     </section>
   );
 };

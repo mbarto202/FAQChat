@@ -1,0 +1,633 @@
+.container {
+  position: static;
+  width: 920px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+  padding: 0px;
+  margin: 200px auto;
+}
+
+.titleContainer {
+  position: static;
+  width: 920px;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 56px;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 56px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.content {
+  position: static;
+  width: 800px;
+  height: 531px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 28px;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 56px 0px;
+}
+
+.chatFrame1 {
+  position: static;
+  width: 800px;
+  height: 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 28px 0px;
+}
+
+.chatFrame2 {
+  position: static;
+  width: 800px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 28px 0px;
+}
+
+.chatFrame3 {
+  position: static;
+  width: 800px;
+  height: 107px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 0px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 28px 0px;
+}
+
+.cFrameContent1 {
+  position: relative;
+  width: 358px;
+  height: 148px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cFrameContent2 {
+  position: relative;
+  width: 591px;
+  height: 220px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cFrameContent3 {
+  position: relative;
+  width: 259px;
+  height: 107px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.imageWrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 92px;
+  height: 92px;
+}
+
+.imageWrapper2 {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  bottom: 0;
+  left: 0;
+}
+
+.imageWrapper3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 92px;
+  height: 92px;
+}
+
+.ellipse7 {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  left: 0;
+  top: 0;
+  background: rgb(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.image {
+  position: absolute;
+  width: 80.96px;
+  height: 80.96px;
+  left: 5.52px;
+  top: 5.52px;
+  z-index: 3;
+}
+
+.image2 {
+  position: absolute;
+  width: 99.32px;
+  height: 99.32px;
+  left: -0.52px;
+  top: -3.66px;
+}
+
+.image3 {
+  position: absolute;
+  width: 92px;
+  height: 92px;
+  z-index: 3;
+}
+
+.textBubble {
+  position: relative;
+  width: 242px;
+  height: 104px;
+  top: -15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 16px 19px 16px 20px;
+  border-radius: 32px 24px 24px 32px;
+  background: rgb(117, 137, 238);
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.textBubble2 {
+  position: relative;
+  width: 475px;
+  height: 176px;
+  left: 120px;
+  top: -15px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 16px 20px 16px 19px;
+  border-radius: 32px 24px 24px 32px;
+  background: rgb(164, 177, 244);
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.textBubble3 {
+  position: relative;
+  width: 137px;
+  height: 63px;
+  left: 0;
+  right: 6px;
+  top: -15px;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 20px 23px 18px 24px;
+  border-radius: 32px 24px 24px 32px;
+  background: rgb(117, 137, 238);
+  color: white;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.textContent1 {
+  position: static;
+  width: 197px;
+  height: 108px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 20px 19px 16px 20px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: right;
+  margin: 0px 0px -26px 10px;
+}
+
+.textContent3 {
+  position: static;
+  width: 90px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  color: rgb(0, 0, 0);
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0px 8px;
+}
+
+.textContent2 {
+  position: static;
+  width: 430px;
+  height: 144px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  padding: 16px 20px 16px 19px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: -12px;
+}
+
+.arrow1 {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  bottom: 0px;
+  right: -15px;
+  flex: none;
+  order: undefined;
+  flex-grow: 0;
+  margin: 0px 8px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgb(117, 137, 238);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(190deg);
+}
+
+.arrow3 {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  background: rgb(117, 137, 238);
+  bottom: 0px;
+  right: -10px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(190deg);
+}
+
+.arrow2 {
+  position: absolute;
+  width: 30px;
+  height: 12px;
+  flex: none;
+  order: undefined;
+  flex-grow: 0;
+  bottom: 0px;
+  left: -6px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: rgb(164, 177, 244);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  transform: rotate(170deg);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 366px;
+    height: 475px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    padding: 0px;
+  }
+
+  .titleContainer {
+    width: 366px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 44px;
+    padding: 0px;
+    margin: 44px 0px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 1%;
+    text-align: center;
+  }
+
+  .content {
+    position: static;
+    width: 366px;
+    height: 387px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 0px;
+    margin: 44px 0px;
+  }
+
+  .chatFrame1 {
+    position: relative;
+    width: 366px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .chatFrame2 {
+    position: relative;
+    width: 366px;
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .chatFrame3 {
+    position: relative;
+    width: 366px;
+    height: 81px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 0px;
+    margin: 20px 0px;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .cFrameContent1 {
+    position: static;
+    width: 243px;
+    height: 100px;
+    margin: 10px 0px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .cFrameContent2 {
+    position: static;
+    width: 323px;
+    height: 166px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+  }
+
+  .cFrameContent3 {
+    position: static;
+    width: 179px;
+    height: 81px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 10px 0px;
+  }
+
+  .textBubble {
+    width: 164px;
+    height: 90px;
+    left: 0;
+    right: 3px;
+    padding: 12px 15px 12px 16px;
+  }
+
+  .textBubble2 {
+    width: 244px;
+    height: 134px;
+    left: 80px;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 8px;
+    padding: 12px 15px 12px 16px;
+    border-radius: 24px 16px 16px 24px;
+    background: rgb(164, 177, 244);
+  }
+
+  .textBubble3 {
+    width: 100px;
+    height: 49px;
+    left: 0;
+    right: 3px;
+    top: -10px;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 19px 12px 20px;
+  }
+
+  .textContent1 {
+    width: 133px;
+    height: 66px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8;
+    padding: 12px 15px 12px 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 8px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+  }
+
+  .textContent2 {
+    width: 223px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 15px 12px 2px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+    text-align: left;
+  }
+
+  .textContent3 {
+    width: 61px;
+    height: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: auto;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    text-align: right;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+  }
+
+  .imageWrapper2 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+  }
+
+  .imageWrapper3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 64px;
+    height: 64px;
+  }
+
+  .image2 {
+    position: absolute;
+    width: 69.09px;
+    height: 69.09px;
+    left: -0.36px;
+    top: -2.54px;
+  }
+
+  .image3 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 0;
+  }
+
+  .ellipse7 {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    left: 0;
+    top: 0;
+  }
+}

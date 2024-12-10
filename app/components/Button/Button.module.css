@@ -1,0 +1,21 @@
+.button {
+  width: 224px;
+  height: 60px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgb(72, 68, 213) 8.928%,
+    rgb(132, 128, 255) 108.333%
+  );
+  color: white;
+  font-family: sans-serif;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: rgb(132, 128, 255);
+}

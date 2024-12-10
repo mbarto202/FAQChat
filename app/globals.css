@@ -10,8 +10,14 @@
 #root,
 html,
 body {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: stretch; /* Allow full-width sections */
   width: 100%;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: visible; /* Avoid clipping content */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,7 +37,14 @@ body {
 
 .container {
   width: 100%;
-  margin: 0 auto; /* Center container */
+  max-width: 920px; /* Optional: Limit max-width for readability */
+  margin: 0 auto; /* Center horizontally */
+  padding: 0 20px; /* Add side padding for smaller screens */
+}
+
+section {
+  margin: 200px auto; /* Add consistent vertical spacing */
+  width: 100%; /* Full width for flexibility */
 }
 
 @layer utilities {
