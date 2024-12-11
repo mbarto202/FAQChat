@@ -1,0 +1,67 @@
+.container {
+  position: static;
+  width: 920px;
+  height: 236px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+  padding: 0px;
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+  margin: 200px 0px;
+}
+
+.image {
+  position: static;
+  width: 200px;
+  height: 200px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 64px;
+}
+
+.textContainer {
+  position: static;
+  width: 656px;
+  height: 236px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 64px;
+}
+
+.title {
+  position: static;
+  width: 656px;
+  height: 136px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0px;
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 40px 0px;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.textContainer Button {
+}
