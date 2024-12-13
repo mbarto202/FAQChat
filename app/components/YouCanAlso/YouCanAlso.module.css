@@ -47,7 +47,7 @@
   left: 0;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
   margin: 15px 142px;
 }
 
@@ -61,20 +61,61 @@
   }
 
   .image {
-    margin: 0 0 32px 0;
+    margin: 0px 0px;
+    width: 194px;
+    height: 194px;
+  }
+
+  .ellipse {
+    width: 176px;
+    height: 176px;
+    left: auto;
+    top: -15px;
   }
 
   .textContainer {
-    width: 100%;
-    padding: 0 16px; /* Add padding for smaller screens */
+    position: static;
+    width: 366px;
+    height: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 40;
+    padding: 0px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
   }
 
   .title {
+    /* You can also try chatting with ours. It’s fun! */
+    position: static;
+    width: 366px;
+    height: 132px;
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40;
+    padding: 0px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    color: rgb(255, 255, 255);
     font-size: 32px;
+    font-weight: 700;
     line-height: 44px;
+    letter-spacing: 2%;
+    text-align: center;
   }
 
   .textContainer Button {
-    align-self: center; /* Center button for smaller screens */
+    width: 366px;
+    height: 52px;
   }
 }
