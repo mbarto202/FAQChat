@@ -1,0 +1,94 @@
+.container {
+  position: relative;
+  width: 1200px;
+  height: 236px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 400px auto 200px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  margin: 0 90px 0 30px;
+}
+
+.textContainer {
+  width: 656px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.title {
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.textContainer Button {
+  width: 240px;
+}
+
+.ellipse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 50%;
+  z-index: -1;
+  margin: 15px 142px;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 366px;
+    height: 416px;
+    flex-direction: column;
+    gap: 16px;
+    margin: 100px auto;
+  }
+
+  .image {
+    margin: 0;
+    width: 194px;
+    height: 194px;
+  }
+
+  .ellipse {
+    width: 176px;
+    height: 176px;
+    left: auto;
+    top: -15px;
+  }
+
+  .textContainer {
+    width: 100%;
+    max-width: 366px;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .title {
+    width: 338px;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 2%;
+    text-align: center;
+  }
+
+  .textContainer Button {
+    width: 366px;
+    height: 52px;
+  }
+}

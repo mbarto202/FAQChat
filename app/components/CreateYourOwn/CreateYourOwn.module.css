@@ -1,0 +1,207 @@
+/* Container */
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center; /* Center children horizontally */
+  gap: 64px;
+  padding: 0;
+  margin: 200px auto;
+}
+
+/* Container for the input box */
+.inputFrame {
+  width: 1040px;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  border-radius: 12px;
+  background-color: rgb(31, 32, 50);
+}
+
+/* Title and Text Frame */
+.titleTextFrame {
+  width: 1040px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.titleTextFrame h2 {
+  width: 579px;
+  color: rgb(255, 255, 255);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 2%;
+  text-align: center;
+}
+
+.titleTextFrame p {
+  width: 658px;
+  color: rgb(150, 151, 156);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+
+/* Input Box and Buttons Container */
+.inputButtonsFrame {
+  width: 1040px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 40px;
+  padding: 0;
+}
+
+/* Button group */
+.buttonGroup {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Button Styling */
+.buttonLeft {
+  width: 224px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  border: 2px solid rgb(117, 137, 238);
+  border-radius: 8px;
+  background-color: transparent;
+  color: rgb(117, 137, 238);
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin: 0 24px;
+}
+
+.buttonLeft:hover {
+  background-color: rgba(117, 137, 238, 0.1);
+}
+
+.buttonLeftText {
+  color: rgb(117, 137, 238);
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 1%;
+  text-align: center;
+  width: 160px;
+  height: 12px;
+  margin-bottom: auto;
+}
+
+/* Textarea */
+.textArea {
+  width: 984px;
+  height: 212px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 28px;
+  background-color: rgb(31, 32, 50);
+  color: rgb(123, 121, 137);
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: left;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/* Responsive container for smaller screens */
+@media (max-width: 1300px) {
+  .container {
+    width: 366px;
+    height: 511px;
+    gap: 30px;
+    margin: 100px auto;
+  }
+
+  .titleTextFrame {
+    width: auto;
+    gap: 12px;
+    margin: auto;
+  }
+
+  .titleTextFrame h2 {
+    width: 366px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: left;
+  }
+
+  .titleTextFrame p {
+    width: 366px;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .inputButtonsFrame {
+    width: 366px;
+    height: auto;
+    gap: 24px;
+    position: relative;
+  }
+
+  .buttonGroup {
+    width: 342px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column-reverse;
+    position: absolute;
+    bottom: -65px;
+    left: 12px;
+  }
+
+  .buttonGroup Button {
+    width: 100%;
+    max-width: 366px;
+    height: 52px;
+    font-size: 14px;
+  }
+
+  .buttonLeftText {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .buttonLeft {
+    border: none;
+  }
+
+  .textArea {
+    width: 366px;
+    height: 249px;
+    padding: 20px;
+    font-size: 17px;
+  }
+}
