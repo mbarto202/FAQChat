@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  margin: 200px auto;
+  margin: 200px auto 33px auto;
 }
 
 .text {
@@ -26,10 +26,10 @@
 }
 
 .text2 {
-  width: 320px; /* Increased to ensure it fits all children */
+  width: 320px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Ensures proper spacing between children */
+  justify-content: space-between;
   align-items: center;
   padding: 0;
   margin: 0 10px;
@@ -38,17 +38,59 @@
 .termsOfService,
 .privacyPolicy {
   display: flex;
-  justify-content: center; /* Centers text inside */
+  justify-content: center;
   align-items: center;
   color: rgb(109, 114, 121);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-  margin: 0 10px; /* Reduced margin to fit */
+  margin: 0 10px;
 }
 
 .divider {
   width: 1px;
   height: 16px;
   background: rgb(109, 114, 121);
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 100%; /* Use full available width */
+    max-width: 225px; /* Ensures container doesn’t collapse */
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    gap: 10px; /* Adds spacing between elements */
+    margin: 40px auto; /* Centers container */
+    padding: 0;
+  }
+
+  .text {
+    display: none; /* Hides the "FAQChat All Rights Reserved" text */
+  }
+
+  .text2 {
+    display: flex;
+    flex-direction: row; /* Ensure items sit inline */
+    justify-content: space-between; /* Spread the items out */
+    align-items: center;
+    gap: 10px;
+    width: 100%; /* Allow the container to take up full width */
+    margin: 0;
+  }
+
+  .termsOfService,
+  .privacyPolicy {
+    font-size: 14px; /* Smaller text for smaller screens */
+    line-height: 22px;
+    text-align: center; /* Ensures text alignment */
+    margin: 0; /* Removes unwanted spacing */
+  }
+
+  .divider {
+    width: 1px;
+    height: 16px;
+    background: rgb(109, 114, 121);
+  }
 }
