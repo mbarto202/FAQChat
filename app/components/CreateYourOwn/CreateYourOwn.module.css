@@ -1,17 +1,15 @@
-/* Container */
 .container {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; /* Center children horizontally */
+  align-items: center;
   gap: 64px;
   padding: 0;
   margin: 200px auto;
 }
 
-/* Container for the input box */
 .inputFrame {
   width: 1040px;
   height: 212px;
@@ -25,7 +23,6 @@
   background-color: rgb(31, 32, 50);
 }
 
-/* Title and Text Frame */
 .titleTextFrame {
   width: 1040px;
   height: 232px;
@@ -55,7 +52,6 @@
   text-align: center;
 }
 
-/* Input Box and Buttons Container */
 .inputButtonsFrame {
   width: 1040px;
   display: flex;
@@ -66,7 +62,6 @@
   padding: 0;
 }
 
-/* Button group */
 .buttonGroup {
   display: flex;
   justify-content: flex-end;
@@ -74,7 +69,6 @@
   width: 100%;
 }
 
-/* Button Styling */
 .buttonLeft {
   width: 224px;
   height: 60px;
@@ -109,7 +103,6 @@
   margin-bottom: auto;
 }
 
-/* Textarea */
 .textArea {
   width: 984px;
   height: 212px;
@@ -133,7 +126,6 @@
   box-sizing: border-box;
 }
 
-/* Responsive container for smaller screens */
 @media (max-width: 1300px) {
   .container {
     width: 366px;
