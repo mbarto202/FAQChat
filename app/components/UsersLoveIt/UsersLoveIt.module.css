@@ -63,6 +63,7 @@
   order: 0;
   flex-grow: 0;
   margin: 28px 0px;
+  margin-left: -30px;
 }
 
 .chatFrame2 {
@@ -79,6 +80,7 @@
   order: 1;
   flex-grow: 0;
   margin: 28px 0px;
+  margin-left: 30px;
 }
 
 .chatFrame3 {
@@ -95,6 +97,7 @@
   order: 2;
   flex-grow: 0;
   margin: 28px 0px;
+  margin-left: -30px;
 }
 
 .cFrameContent1 {
@@ -287,12 +290,12 @@
   gap: 8px;
   padding: 0;
   color: rgb(0, 0, 0);
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: left;
-  margin: 0px 8px;
+  margin: 0px 6px;
 }
 
 .textContent2 {
@@ -303,7 +306,6 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  gap: 8px;
   padding: 16px 20px 16px 19px;
   color: rgb(0, 0, 0);
   font-size: 24px;
@@ -481,6 +483,7 @@
     left: 0;
     right: 3px;
     padding: 12px 15px 12px 16px;
+    border-radius: 24px 24px 24px 24px;
   }
 
   .textBubble2 {
@@ -494,7 +497,7 @@
     align-items: flex-end;
     gap: 8px;
     padding: 12px 15px 12px 16px;
-    border-radius: 24px 16px 16px 24px;
+    border-radius: 24px 24px 24px 24px;
     background: rgb(164, 177, 244);
   }
 
@@ -511,6 +514,7 @@
     align-items: center;
     gap: 8px;
     padding: 12px 19px 12px 20px;
+    border-radius: 24px 24px 24px 24px;
   }
 
   .textContent1 {

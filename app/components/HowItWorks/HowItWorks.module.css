@@ -22,7 +22,6 @@
   margin-left: 15px;
 }
 
-/* Instruction styles */
 .instruction {
   display: flex;
   flex-direction: column;
@@ -58,7 +57,7 @@
 }
 
 .descriptionText {
-  font-size: 18px;
+  font-size: 24px;
   line-height: 140%;
   color: rgb(150, 151, 156);
   margin-left: 48px;
